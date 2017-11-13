@@ -4,13 +4,12 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
-<AnchorPane prefHeight="300.0" prefWidth="300.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.141" fx:controller="application.MainController">
+<AnchorPane prefHeight="300.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
    <children>
-      <CheckBox fx:id="cbDog" layoutX="33.0" layoutY="73.0" mnemonicParsing="false" text="Dog" />
-      <CheckBox fx:id="cbCat" layoutX="33.0" layoutY="108.0" mnemonicParsing="false" text="Cat" />
-      <CheckBox fx:id="cbCow" layoutX="33.0" layoutY="133.0" mnemonicParsing="false" text="Cow" />
-      <CheckBox fx:id="cbRat" layoutX="33.0" layoutY="165.0" mnemonicParsing="false" text="Rat" />
+      <CheckBox fx:id="cbDog" layoutX="33.0" layoutY="73.0" mnemonicParsing="false" onAction="#CheckEvent" text="Dog" />
+      <CheckBox fx:id="cbCat" layoutX="33.0" layoutY="108.0" mnemonicParsing="false" onAction="#CheckEvent" text="Cat" />
+      <CheckBox fx:id="cbCow" layoutX="33.0" layoutY="133.0" mnemonicParsing="false" onAction="#CheckEvent" text="Cow" />
+      <CheckBox fx:id="cbRat" layoutX="33.0" layoutY="165.0" mnemonicParsing="false" onAction="#CheckEvent" text="Rat" />
       <Label fx:id="lblCount" layoutX="27.0" layoutY="221.0" prefHeight="42.0" prefWidth="172.0" />
       <Label fx:id="lblList" layoutX="171.0" layoutY="73.0" prefHeight="106.0" prefWidth="114.0" />
    </children>
